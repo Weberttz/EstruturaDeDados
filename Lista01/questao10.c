@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int* f()
 {
@@ -20,7 +21,7 @@ int main(){
 
     Erro: function returns address of local variable [-Wreturn-local-addr]
 
-    Tempo de vida da variável: Variável tem seu escopo local em f, logo só vive enquanto f estiver rodadando
+    Tempo de vida da variável: Variável tem seu escopo local em f, logo só vive enquanto f estiver rodando
     Região de memória envolvida: Stack, pois é uma variável estática
     Consequências práticas: aplicação deixa de rodar e dados se perdem
 */
